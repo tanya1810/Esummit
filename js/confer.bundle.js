@@ -112,50 +112,33 @@
 }(jQuery));
 
 
-//Countdown
+function countdown() {
+    var now = new Date();
+    var over_time = new Date("April 3, 2021 09:00:01");
 
-function getTimeRemaining(endtime) {
-    const total = Date.parse(endtime) - Date.parse(new Date());
-    const seconds = Math.floor((total / 1000) % 60);
-    const minutes = Math.floor((total / 1000 / 60) % 60);
-    const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
-    const days = Math.floor(total / (1000 * 60 * 60 * 24));
-    
-    return {
-      total,
-      days,
-      hours,
-      minutes,
-      seconds
-    };
-  }
-  
-  function initializeClock(id, endtime) {
-    const clock = document.getElementById(id);
-    const daysSpan = clock.querySelector('.days');
-    const hoursSpan = clock.querySelector('.hours');
-    const minutesSpan = clock.querySelector('.minutes');
-    const secondsSpan = clock.querySelector('.seconds');
-  
-    function updateClock() {
-      const t = getTimeRemaining(endtime);
-  
-      daysSpan.innerHTML = t.days;
-      hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-      minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-      secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-  
-      if (t.total <= 0) {
-        clearInterval(timeinterval);
-      }
-    }
-  
-    updateClock();
-    const timeinterval = setInterval(updateClock, 1000);
-  }
-  
-  const deadline = new Date(Date.parse(new Date()) + 30 * 24 * 60 * 60 * 1000);
-  initializeClock('clockdiv', deadline);
+    var now_time = now.getTime();
+    var over = over_time.getTime();
+    var end_time = over - now_time;
+
+    var days = Math.floor(end_time / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((end_time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((end_time % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((end_time % (1000 * 60)) / 1000);
+    if (hours < "10") { hours = "0" + hours; }
+    if (minutes < "10") { minutes = "0" + minutes; }
+    if (seconds < "10") { seconds = "0" + seconds; }
+
+    console.log(days)
+
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+
+    setTimeout(countdown, 1000);
+
+}
+countdown();
 
 
 /**
