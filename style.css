@@ -1018,7 +1018,9 @@ input:required {
       color: #ffffff; }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .single-welcome-slide .welcome-text h2 {
-          font-size: 60px; } }
+          font-size: 60px; 
+          position: absolute;
+          top:0px;} }
       @media only screen and (max-width: 767px) {
         .single-welcome-slide .welcome-text h2 {
           font-size: 30px; } }
