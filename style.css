@@ -1327,7 +1327,7 @@ input:required {
         padding: 20px 5px;
         width: 20%;
         margin: 0 15px;
-        border: 2px solid rgba(255, 255, 255, 0.15);
+        border: 3px solid rgba(255, 255, 255, 0.8);
         text-align: center;
         line-height: 1; }
         @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1348,7 +1348,8 @@ input:required {
         .about-us-countdown-area .countdown-up-area .countdown-timer #clockdiv2 div span {
           margin-top: 5px;
           font-size: 18px;
-          color: #5d5e8d;
+          font-weight: bold !important;
+          color: white;
           font-weight: 500;
           display: block; }
           @media only screen and (min-width: 992px) and (max-width: 1199px) {
