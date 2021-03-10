@@ -110,37 +110,6 @@
     };
     
 }(jQuery));
-
-
-function countdown() {
-    var now = new Date();
-    var over_time = new Date("April 3, 2021 09:00:01");
-
-    var now_time = now.getTime();
-    var over = over_time.getTime();
-    var end_time = over - now_time;
-
-    var days = Math.floor(end_time / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((end_time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((end_time % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((end_time % (1000 * 60)) / 1000);
-    if (hours < "10") { hours = "0" + hours; }
-    if (minutes < "10") { minutes = "0" + minutes; }
-    if (seconds < "10") { seconds = "0" + seconds; }
-
-    console.log(days)
-
-    document.getElementById("days").innerHTML = days;
-    document.getElementById("hours").innerHTML = hours;
-    document.getElementById("minutes").innerHTML = minutes;
-    document.getElementById("seconds").innerHTML = seconds;
-
-    setTimeout(countdown, 1000);
-
-}
-countdown();
-
-
 /**
  * Owl Carousel v2.2.1
  * Copyright 2013-2017 Saurabh Sharma
