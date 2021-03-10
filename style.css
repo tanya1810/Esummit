@@ -879,7 +879,7 @@ input:required {
   width: 100%;
   height: auto;
   background-color: #df42b1; }
-  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .single-welcome-slide {
       height: 800px; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -887,7 +887,7 @@ input:required {
       height: 800px; } }
   @media only screen and (max-width: 767px) {
     .single-welcome-slide {
-      height: 700px; } }
+      height: 700px; } } */
   .single-welcome-slide .welcome-text {
     position: relative;
     z-index: 1; }
