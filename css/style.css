@@ -28,20 +28,22 @@
 #clockdiv{
 	color: #fff;
 	display: inline-block;
-	font-weight: 100;
 	text-align: center;
-	font-size: 30px;
+	font-size: 40px;
+	padding-left: 275px;
+	padding-bottom: 70px;
 }
 
 #clockdiv > div{
-	left: 20px;
-	padding: 10px;
+	padding: 20px;
+	border: medium solid rgb(143, 143, 165);
 	border-radius: 3px;
-	background: #bf00b5;
+	background: transparent;
 	display: inline-block;
 }
 
 #clockdiv div > span{
+	font-weight: 1000;
 	padding: 15px;
 	border-radius: 3px;
 	background: transparent;
@@ -49,8 +51,10 @@
 }
 
 .smalltext{
+	font-weight: 500;
 	padding-top: 5px;
 	font-size: 16px;
+	color: rgb(143, 143, 165);;
 }
 
 
