@@ -137,37 +137,61 @@
 
 
 <section class="welcome-area" id="desktop">
- 
-<div class="single-welcome-slide bg-img bg-overlay jarallax" >
-   <video autoplay muted loop id="myVideo" >
-  <source src="vid/Sample-1.m4v" type="video/mp4">
-</video>
-<div class="container h-100">
-<div class="row h-100 align-items-center">
+
+    <form action="#" method="post">
+    <div class="single-welcome-slide bg-img bg-overlay jarallax" >
+      <video autoplay muted loop id="myVideo" >
+      <source src="vid/Sample-1.m4v" type="video/mp4">
+    </video>
+    <div class="container h-100">
+    <div class="row h-100 align-items-center">
 
 
-<div class="welcome-text text-right" style="position: absolute;top:200px;right:200px;">
-<h3 data-animation="fadeInUp" data-delay="300ms">Big things and opportunities<br>come once in a while.<br><br>All the future Zuckerberg's gear up<br> for the biggest entrepreneurial event <br>of the year.</h3>
-<h6 data-animation="fadeInUp" data-delay="500ms"> Click on the button below to receive regular<br>information and not miss any opportunity</h6>
+    <div class="welcome-text text-right" style="position: absolute;top:200px;right:200px;">
+    <h3 data-animation="fadeInUp" data-delay="300ms">Big things and opportunities<br>come once in a while.<br><br>All the future Zuckerberg's gear up<br> for the biggest entrepreneurial event <br>of the year.</h3>
+    <h6 data-animation="fadeInUp" data-delay="500ms"> Click on the button below to receive regular<br>information and not miss any opportunity</h6>
 
-<div class="input-group" style="position: absolute;right: 0px;">
-  <input type="text" name="email" value="" required="required" placeholder="Email"/>
-  <label for="text-1542372332072">Email</label>
-  <div class="req-mark">!</div>
-</div>
+    <div class="input-group" style="position: absolute;right: 0px;">
+      <input type="text" name="email" value="" required="required" placeholder="Email"/>
+      <label for="text-1542372332072">Email</label>
+      <div class="req-mark">!</div>
+    </div>
 
 
 
-<br>
-<div class="hero-btn-group" data-animation="fadeInUp" data-delay="700ms" style="position:absolute;right: 165px;top:420px;">
-<a href="#" class="btn confer-btn">Submit<i class="zmdi zmdi-long-arrow-right"></i></a>
-</div>
-</div>
-</div>
-</div>
-</div>
+    <br>
+    <div class="hero-btn-group" data-animation="fadeInUp" data-delay="700ms" style="position:absolute;right: 165px;top:420px;">
+    <button href="#" class="btn confer-btn" name="submit" value="submit">Submit<i class="zmdi zmdi-long-arrow-right"></i></button>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
 
-<div class="icon-scroll" id="scrollDown"></div>
+    <div class="icon-scroll" id="scrollDown"></div>
+</form>
+
+<?php
+    $message = "";
+    if(isset($_POST['submit'])){ 
+      $email = $_POST['email'];
+      $message = "Success! You have been registered ";
+      $server = 'localhost';
+      $username = 'root';
+      $password = '';
+      $database = 'esummit';
+      $dbcon = mysqli_connect($server, $username, $password, $database);
+
+      if ($dbcon->connect_error) {
+          die("Connection failed: " . $dbcon->connect_error);
+        }
+
+      $query = "INSERT INTO esummit values ('$email')";
+      mysqli_query($dbcon,$query);
+      echo $message; 
+    }        
+  ?>
+
 </section>
 
 <section class="welcome-area" id ="mobile">
