@@ -158,7 +158,121 @@
 				padding: 0;
 			}
 		}
+s
+	body {
+	    background-color: #434c50;
+	    min-height: 100vh;
+	    font: normal 16px sans-serif;
+	    padding: 0 0;
+	}
+
+	.container.gallery-container {
+	    background-color: #fff;
+	    color: #35373a;
+	    min-height: 100vh;
+	    padding: 30px 50px;
+	}
+
+	.gallery-container h1 {
+	    text-align: center;
+	    margin-top: 50px;
+	    font-family: 'Droid Sans', sans-serif;
+	    font-weight: bold;
+	}
+
+	.gallery-container p.page-description {
+	    text-align: center;
+	    margin: 25px auto;
+	    font-size: 18px;
+	    color: #999;
+	}
+
+	.tz-gallery {
+	    padding: 40px;
+	}
+
+	/* Override bootstrap column paddings */
+	.tz-gallery .row > div {
+	    padding: 2px;
+	}
+
+	.tz-gallery .lightbox img {
+	    width: 100%;
+	    border-radius: 0;
+	    position: relative;
+	}
+
+	.tz-gallery .lightbox:before {
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    margin-top: -13px;
+	    margin-left: -13px;
+	    opacity: 0;
+	    color: #fff;
+	    font-size: 26px;
+	    font-family: 'Glyphicons Halflings';
+	    content: '\e003';
+	    pointer-events: none;
+	    z-index: 9000;
+	    transition: 0.4s;
+	}
+
+
+	.tz-gallery .lightbox:after {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    opacity: 0;
+	    background-color: rgba(46, 132, 206, 0.7);
+	    content: '';
+	    transition: 0.4s;
+	}
+
+	.tz-gallery .lightbox:hover:after,
+	.tz-gallery .lightbox:hover:before {
+	    opacity: 1;
+	}
+	.baguetteBox-button {
+	    background-color: transparent !important;
+	}
+
+	@media(max-width: 768px) {
+	    body {
+	        padding: 0;
+	    }
+	}
 	</style>
+
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+<script type="text/javascript">
+	window.onscroll = function(ev) {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        var home = document.getElementById("nav_home")
+        console.log(nav_home)
+        var contact = document.getElementById("nav_contact")
+        console.log(nav_contact)
+        home.classList.remove("active")
+        contact.classList.add("active")
+        console.log("at end")
+    }
+    else{
+        var home = document.getElementById("nav_home")
+        console.log(nav_home)
+        var contact = document.getElementById("nav_contact")
+        console.log(nav_contact)
+        home.classList.add("active")
+        contact.classList.remove("active")
+        console.log(" not at end")
+    }
+};
+</script>
 </head>
 
 <body>
@@ -189,7 +303,7 @@
 
 						<div class="classynav">
 							<ul id="nav">
-								<li class="active"><a href="#">Home</a></li>
+								<li id="nav_home" class="active"><a href="#">Home</a></li>
 								<!--  <li><a href="#">Pages</a>
   <ul class="dropdown"> 
   <li><a href="index.html">- Home</a></li>
@@ -213,11 +327,11 @@
 								<li><a href="#gallery">Gallery</a></li>
 
 								<!-- <li><a href="blog.html">Blog</a></li> -->
-								<li><a href="#contact">Contact</a></li>
+								<li id="nav_contact" ><a href="#contact">Contact</a></li>
 							</ul>
 
 							<a href="https://www.edctiet.com/" target="_blank"
-								class="btn confer-btn mt-3 mt-lg-0 ml-3 ml-lg-5">Know More About Us<i
+								class=" confer-btn mt-3 mt-lg-0 ml-3 ml-lg-5">Know More About Us<i
 									class="zmdi zmdi-long-arrow-right"></i></a>
 						</div>
 
@@ -249,7 +363,7 @@
 								</div>
 								<br><br><br><br>
 								<div class="hero-btn-group" data-animation="fadeInUp" data-delay="700ms">
-									<a href="#" class="btn confer-btn">Subscribe Now <i
+									<a href="#" class=" confer-btn">Subscribe Now <i
 											class="zmdi zmdi-long-arrow-right"></i></a>
 								</div> -->
 							</div>
@@ -348,7 +462,7 @@
 							<!-- <div class="req-mark">!</div> -->
 						</div>
 
-						<a href="#" class="btn confer-btn mt-20 wow fadeInUp" data-wow-delay="300ms">Subscribe Now <i
+						<a href="#" class=" confer-btn mt-50 wow fadeInUp" data-wow-delay="300ms">Subscribe Now <i
 								class="zmdi zmdi-long-arrow-right"></i></a>
 					</div>
 				</div>
@@ -405,7 +519,7 @@
 						</div>
 						<div class="col-12">
 							<div class="more-speaker-btn text-center mt-20 mb-40 wow fadeInUp" data-wow-delay="300ms">
-								<a class="btn confer-btn-white" href="gallery.html">View all<i
+								<a class="confer-btn-white" href="gallery.html">View all<i
 										class="zmdi zmdi-long-arrow-right"></i></a>
 							</div>
 						</div>
@@ -414,7 +528,10 @@
 			</div>
 		</div>
 	</section>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
 
 	<footer id="contact" class="footer-area bg-img bg-overlay-2 section-padding-100-0">
 
