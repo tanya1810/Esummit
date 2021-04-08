@@ -6,7 +6,7 @@
   
   .input-group {
 	display: block;
-	width: 441px;
+	/* width: 441px; */
 	max-width: 100%;
 	height: 60px;
 	border: 0;
