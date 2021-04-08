@@ -41,9 +41,14 @@
 				box-shadow: none;
 				background-color: rgba(255, 255, 255, 0);
 				top: 0;
-				height: 18px;
-				width: 80%;
-				padding: 0 53px;
+				height: 60px;
+				width: 100%;
+				padding: 0 0 0 53px;
+				border-bottom-left-radius: 41px;
+				border-bottom-right-radius: 41px;
+				border-top-left-radius: 41px;
+				border-top-right-radius: 0;
+				margin-top: -22px;
 				box-sizing: border-box;
 				z-index: 3;
 				display: block;
@@ -619,7 +624,7 @@ s
 	<script>
 		function countdown() {
 			var now = new Date();
-			var over_time = new Date("April 03, 2021 12:00:01");
+			var over_time = new Date("April 23, 2021 12:00:01");
 
 			var now_time = now.getTime();
 			var over = over_time.getTime();
