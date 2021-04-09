@@ -385,7 +385,6 @@ s
 	
 	<section class="welcome-area" id="mobile">
 		<div class="welcome-slides owl-carousel owl-loaded owl-drag">
-
 			<div class="single-welcome-slide bg-img bg-overlay jarallax"
 				style="background-image: url(img/bg-img/45.jpg);position: relative;">
 				<div class="container h-100">
@@ -421,9 +420,7 @@ s
 
 
 	<section class="about-us-countdown-area section-padding-100-0" id="about">
-
-		
-
+		<form method="post" action="#">
 		<div class="countdown-up-area">
 			<div class="container">
 				<div class="row align-items-center">
@@ -447,10 +444,9 @@ s
 				</div>
 			</div>
 		</div>
-
 		<div class="container">
 			<div class="row align-items-center">
-
+				
 				<div class="col-12 col-md-6">
 					<div class="about-content-text mb-80">
 						<h6 class="wow fadeInUp" data-wow-delay="300ms">About</h6>
@@ -467,8 +463,8 @@ s
 							<!-- <div class="req-mark">!</div> -->
 						</div>
 
-						<a href="#" class=" confer-btn mt-50 wow fadeInUp" data-wow-delay="300ms">Subscribe Now <i
-								class="zmdi zmdi-long-arrow-right"></i></a>
+						<button name="submit" value="submit" href="#" class=" confer-btn mt-50 wow fadeInUp" data-wow-delay="300ms">Subscribe Now <i
+								class="zmdi zmdi-long-arrow-right"></i></button>
 					</div>
 				</div>
 				<div class="col-12 col-md-6">
@@ -478,6 +474,27 @@ s
 				</div>
 			</div>
 		</div>
+	</form>
+	<?php
+    $message = "";
+    if(isset($_POST['submit'])){ 
+      $email = $_POST['email'];
+      $message = "Success! You have been registered ";
+      $server = 'localhost';
+      $username = 'root';
+      $password = '';
+      $database = 'esummit';
+      $dbcon = mysqli_connect($server, $username, $password, $database);
+
+      if ($dbcon->connect_error) {
+          die("Connection failed: " . $dbcon->connect_error);
+        }
+
+      $query = "INSERT INTO esummit values ('$email')";
+      mysqli_query($dbcon,$query);
+      echo $message; 
+    }        
+  ?>
 	</section>
 
 
