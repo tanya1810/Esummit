@@ -62,6 +62,7 @@ h4,
 h5,
 h6 {
   font-family: "Poppins", sans-serif;
+  color: #111343;
   line-height: 1.25;
   font-weight: 600; }
 
@@ -96,123 +97,6 @@ ul {
   ul li {
     margin: 0;
     padding: 0; }
-
-
-    #myVideo{
-  position:fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  max-height: 100%;
-    }
-
-.welcome-text{
-  text-transform: uppercase;
-  color: #111343;
-
-}
-
-
-
-.input-group body {
-  background-color: #efefef;
-  padding: 70px;
-  font-family: "Poppins", sans-serif;
-}
-
-.input-group {
-  display: block;
-  width: 441px;
-  max-width: 100%;
-  height: 60px;
-  border: 0;
-  background-color: #ffffff;
-  border-bottom-left-radius: 41px;
-  border-bottom-right-radius: 41px;
-  border-top-left-radius: 41px;
-  border-top-right-radius: 0;
-  box-shadow: 0 17px 40px 0 rgba(75, 128, 182, 0.07);
-  margin-bottom: 22px;
-  position: relative;
-  font-size: 17px;
-  color: #a7b4c1;
-  transition: opacity 0.2s ease-in-out, filter 0.2s ease-in-out,
-    box-shadow 0.1s ease-in-out;
-}
-
-.input-group:hover {
-  box-shadow: 0 14px 44px 0 rgba(0, 0, 0, 0.077);
-}
-
-.input-group input {
-  position: absolute;
-  border: 0;
-  box-shadow: none;
-  background-color: rgba(255, 255, 255, 0);
-  top: 0;
-  height: 45px;
-  width: 100%;
-  padding: 0 53px;
-  box-sizing: border-box;
-  z-index: 3;
-  display: block;
-  color: #1a6fc4;
-  font-size: 17px;
-  font-family: "Poppins", sans-serif;
-  transition: top 0.1s ease-in-out;
-}
-
-.input-group input::placeholder {
-  color: rgba(0, 0, 0, 0);
-}
-
-.input-group input:focus,
-.input-group input:not(:placeholder-shown) {
-  top: 17px;
-}
-
-.input-group label {
-  position: absolute;
-  border: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  padding: 0 53px;
-  box-sizing: border-box;
-  transition: all 0.1s ease-in-out;
-  cursor: text;
-}
-
-.input-group input:focus + label,
-.input-group input:not(:placeholder-shown) + label {
-  bottom: 20px;
-  font-size: 13px;
-  opacity: 0.7;
-}
-
-.req-mark {
-  position: absolute;
-  pointer-events: none;
-  top: 0;
-  right: 33px;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  font-size: 22px;
-  color: #e0e0e0;
-  font-family: "Poppins", sans-serif;
-}
-
-
 
 .bg-overlay {
   position: relative;
@@ -629,9 +513,10 @@ input:required {
   height: 46px;
   line-height: 46px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: bold;
   border: none;
   display: inline-block;
+  text-decoration: none;
   padding: 0 25px;
   text-align: center;
   text-transform: uppercase;
@@ -659,7 +544,8 @@ input:required {
     background-image: -ms-linear-gradient(120deg, #505add 0%, #df42b1 100%);
     z-index: -2; }
   .confer-btn:focus, .confer-btn:hover {
-    font-weight: 500;
+    font-weight: bold;
+    text-decoration: none;
     background-color: #ffffff;
     color: #111343 !important;
     -webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
@@ -993,9 +879,9 @@ input:required {
   position: relative;
   z-index: 2;
   width: 100%;
-  height: 980px;
+  height: auto;
   background-color: #df42b1; }
-  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .single-welcome-slide {
       height: 800px; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1003,7 +889,7 @@ input:required {
       height: 800px; } }
   @media only screen and (max-width: 767px) {
     .single-welcome-slide {
-      height: 700px; } }
+      height: 700px; } } */
   .single-welcome-slide .welcome-text {
     position: relative;
     z-index: 1; }
@@ -1426,7 +1312,7 @@ input:required {
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .about-us-countdown-area .countdown-up-area .countdown-content-text h4 {
           font-size: 14px; } }
-    .about-us-countdown-area .countdown-up-area .countdown-timer #clock {
+    .about-us-countdown-area .countdown-up-area .countdown-timer #clockdiv2 {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1437,47 +1323,48 @@ input:required {
       -ms-flex-pack: center;
       justify-content: center;
       color: #ffffff; }
-      .about-us-countdown-area .countdown-up-area .countdown-timer #clock div {
+      .about-us-countdown-area .countdown-up-area .countdown-timer #clockdiv2 div {
         font-size: 62px;
         font-weight: 600;
         padding: 20px 5px;
         width: 20%;
         margin: 0 15px;
-        border: 2px solid rgba(255, 255, 255, 0.15);
+        border: 3px solid rgba(255, 255, 255, 0.8);
         text-align: center;
         line-height: 1; }
         @media only screen and (min-width: 992px) and (max-width: 1199px) {
-          .about-us-countdown-area .countdown-up-area .countdown-timer #clock div {
+          .about-us-countdown-area .countdown-up-area .countdown-timer #clockdiv2 div {
             font-size: 42px;
             margin: 0 10px; } }
         @media only screen and (min-width: 768px) and (max-width: 991px) {
-          .about-us-countdown-area .countdown-up-area .countdown-timer #clock div {
+          .about-us-countdown-area .countdown-up-area .countdown-timer #clockdiv2 div {
             font-size: 36px;
             margin: 0 5px; } }
         @media only screen and (max-width: 767px) {
-          .about-us-countdown-area .countdown-up-area .countdown-timer #clock div {
+          .about-us-countdown-area .countdown-up-area .countdown-timer #clockdiv2 div {
             font-size: 16px;
             margin: 0 2px; } }
         @media only screen and (min-width: 480px) and (max-width: 767px) {
-          .about-us-countdown-area .countdown-up-area .countdown-timer #clock div {
+          .about-us-countdown-area .countdown-up-area .countdown-timer #clockdiv2 div {
             font-size: 24px; } }
-        .about-us-countdown-area .countdown-up-area .countdown-timer #clock div span {
+        .about-us-countdown-area .countdown-up-area .countdown-timer #clockdiv2 div span {
           margin-top: 5px;
           font-size: 18px;
-          color: #5d5e8d;
+          font-weight: bold !important;
+          color: white;
           font-weight: 500;
           display: block; }
           @media only screen and (min-width: 992px) and (max-width: 1199px) {
-            .about-us-countdown-area .countdown-up-area .countdown-timer #clock div span {
+            .about-us-countdown-area .countdown-up-area .countdown-timer #clockdiv2 div span {
               font-size: 16px; } }
           @media only screen and (min-width: 768px) and (max-width: 991px) {
-            .about-us-countdown-area .countdown-up-area .countdown-timer #clock div span {
+            .about-us-countdown-area .countdown-up-area .countdown-timer #clockdiv2 div span {
               font-size: 14px; } }
           @media only screen and (max-width: 767px) {
-            .about-us-countdown-area .countdown-up-area .countdown-timer #clock div span {
+            .about-us-countdown-area .countdown-up-area .countdown-timer #clockdiv2 div span {
               font-size: 10px; } }
           @media only screen and (min-width: 480px) and (max-width: 767px) {
-            .about-us-countdown-area .countdown-up-area .countdown-timer #clock div span {
+            .about-us-countdown-area .countdown-up-area .countdown-timer #clockdiv2 div span {
               font-size: 12px; } }
 
 /* :: 12.0 Speaker Area CSS */
