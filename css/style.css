@@ -1244,5 +1244,60 @@ text-shadow: none;
 	.glyph .fs1 {
 		font-size: 2em;
 	}
-
+	*{
+		box-sizing: border-box;
+		transition: 0.25s;
+	}
+	body{
+  font-family: system-ui, sans-serif;
+		padding: 0 2rem;
+}
+h1{
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid silver;
+  border-image: linear-gradient(to right, transparent 20%, darkslategrey, transparent 80%)30;
+}
+/* Specific styles */
+details{
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: lavender;
+  border-radius: 0.25rem;
+}
+summary{
+	  list-style-type:'❔ ';
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: slategrey;
+  cursor: pointer; 
+  position: relative;
+		outline: none;
+}
+summary::after{
+  content: "➕";
+  background: whitesmoke;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  position: absolute;
+  right: 0.25rem;
+  top: -0.5rem;
+  color: whitesmoke;
+}
+details[open]{
+		background: whitesmoke;
+}
+details[open] summary{
+	color: dimgrey;
+}
+details[open] summary::after{
+  content: "➖";
+}
+/* End specific styles */
+p{
+  color: dimgrey;
+  font-weight: bold;
+  letter-spacing: 1.5;
+}
 	
