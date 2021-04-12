@@ -4021,6 +4021,18 @@ input:required {
 .call-to-action-content .event-time p i {
     margin-right: 3px;
 }
+.single-ticket-pricing-table .ticket-price{
+    font-size: 40px;
+   
+  
+  }
+  .text-center{
+    text-align: justify!important;
+  }
+  /*# sourceMappingURL=style.css.map */
+  p {
+  font-size: 15px;
+  }
 
 
 /*# sourceMappingURL=style.css.map */
