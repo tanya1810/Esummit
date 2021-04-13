@@ -15,6 +15,18 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    .navlogo{
+			width: 200px; 
+			height: 150px;
+	}
+    @media(max-width: 768px){
+        .navlogo {
+			width: 260px;
+			height: 140px;
+		}
+    }
+</style>
 
 <body>
 
@@ -29,7 +41,8 @@
 
                 <nav class="classy-navbar justify-content-between" id="conferNav">
 
-                    <a class="nav-brand" href="index-2.html"><img src="img/core-img/logo.png" alt=""></a>
+                    <a class="nav-brand" href="index-2.html"><img src="img/core-img/esummit.png" alt=""
+                        class="navlogo"></a>
 
                     <div class="classy-navbar-toggler">
                         <span class="navbarToggler"><span></span><span></span><span></span></span>
@@ -43,34 +56,17 @@
 
                         <div class="classynav">
                             <ul id="nav">
-                                <li class="active"><a href="index-2.html">Home</a></li>
-                                <li><a href="#">Pages</a>
-                                    <ul class="dropdown">
-                                        <li><a href="index-2.html">- Home</a></li>
-                                        <li><a href="about.html">- About Us</a></li>
-                                        <li><a href="speakers.html">- Speakers</a></li>
-                                        <li><a href="schedule.html">- Schedule</a></li>
-                                        <li><a href="tickets.html">- Tickets</a></li>
-                                        <li><a href="blog.html">- Blog</a></li>
-                                        <li><a href="single-blog.html">- Single Blog</a></li>
-                                        <li><a href="contact.html">- Contact</a></li>
-                                        <li><a href="#">- Dropdown</a>
-                                            <ul class="dropdown">
-                                                <li><a href="#">- Dropdown Item</a></li>
-                                                <li><a href="#">- Dropdown Item</a></li>
-                                                <li><a href="#">- Dropdown Item</a></li>
-                                                <li><a href="#">- Dropdown Item</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="speakers.html">Speakears</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li class="active"><a href="#home">Home</a></li>
+                                <li><a href="#about">About Us</a></li>
+                                <li><a href="#speakers">Speakers</a></li>
+                                <li><a href="#schedule">Schedule</a></li>
+                                <li><a href="#events">Events</a></li>
+                                <li><a href="#faq">FAQs</a></li>
+                                <li><a href="#contact">Contact Us</a></li>
                             </ul>
 
-                            <a href="#" class="btn confer-btn mt-3 mt-lg-0 ml-3 ml-lg-5">Get Tickets <i
-									class="zmdi zmdi-long-arrow-right"></i></a>
+                            <!-- <a href="#" class="btn confer-btn mt-3 mt-lg-0 ml-3 ml-lg-5">Know More About Us<i
+									class="zmdi zmdi-long-arrow-right"></i></a> -->
                         </div>
 
                     </div>
@@ -123,8 +119,10 @@
                     <div class="about-content-text mb-80">
                         <h6 class="wow fadeInUp" data-wow-delay="300ms">About</h6>
                         <h3 class="wow fadeInUp" data-wow-delay="300ms">E-SUMMIT 2021</h3>
-                        <p class="wow fadeInUp" data-wow-delay="300ms">Big things and opportunities come once in a while.
-                            <br><br> All the future Zuckerberg's gear up for the biggest entrepreneurial event of the year. Click on the button below to receive regular information and not miss any opportunity</p>
+                        <p class="wow fadeInUp" data-wow-delay="300ms">
+                             E-summit is an annual gathering of entrepreneurs, investors, and their supporters in a three-day event organized by EDC, TIET. Here, we celebrate the spirit of entrepreneurship and provide a platform to all the young minds to present their ingenuity and imagination.  
+
+                            The summit is a symposium of sharp and creative minds, path-leading professionals and innovators, who believe in the power of an idea and its ability to take the whole world by a storm. The event acts as a platform where today's youth can mingle to share their innovative and enterprising ideas which is the lifeblood of entrepreneurship.</p>
                         <br>
                     </div>
                 </div>
@@ -142,9 +140,9 @@
             <div class="row">
 
                 <div class="col-12">
-                    <div class="section-heading text-center wow fadeInUp" data-wow-delay="300ms">
-                        <p>Our Speakings</p>
-                        <h4>Who’s speaking</h4>
+                    <div class="section-heading text-center wow fadeInUp" data-wow-delay="300ms" style="text-align: center;">
+                        
+                        <h4>Our Speakers</h4>
                     </div>
                 </div>
             </div>
@@ -263,12 +261,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12">
+                <!-- <div class="col-12">
                     <div class="more-speaker-btn text-center mt-20 mb-40 wow fadeInUp" data-wow-delay="300ms">
                         <a class="btn confer-btn-white" href="speakers.html">view all Speaker <i
 								class="zmdi zmdi-long-arrow-right"></i></a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -567,96 +565,18 @@
     </section>
 
 
-    <section class="our-ticket-pricing-table-area bg-img bg-gradient-overlay section-padding-100-0 jarallax" style="background-image: url(img/bg-img/14.jpg);">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-12">
-                    <div class="section-heading text-center wow fadeInUp" data-wow-delay="300ms">
-                        <p>Choose a Ticket</p>
-                        <h4>Ticket Pricing</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-
-                <div class="col-12 col-lg-4">
-                    <div class="single-ticket-pricing-table text-center mb-100 wow fadeInUp" data-wow-delay="300ms">
-                        <h6 class="ticket-plan">1 day pass</h6>
-
-                        <div class="ticket-icon">
-                            <img src="img/core-img/p1.png" alt="">
-                        </div>
-                        <h2 class="ticket-price"><span>$</span>59</h2>
-                        <a href="#" class="btn confer-btn w-100 mb-30">Get Tickets <i
-								class="zmdi zmdi-long-arrow-right"></i></a>
-
-                        <div class="ticket-pricing-table-details">
-                            <p><i class="zmdi zmdi-check"></i> One Day Conference Ticket</p>
-                            <p><i class="zmdi zmdi-check"></i> Coffee-break</p>
-                            <p><i class="zmdi zmdi-check"></i> Lunch and Networking</p>
-                            <p><i class="zmdi zmdi-check"></i> Keynote talk</p>
-                            <p><i class="zmdi zmdi-check"></i> Talk to the Editors Session</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-ticket-pricing-table active text-center mb-100 wow fadeInUp" data-wow-delay="300ms">
-                        <h6 class="ticket-plan">Full pass</h6>
-
-                        <div class="ticket-icon">
-                            <img src="img/core-img/p2.png" alt="">
-                        </div>
-                        <h2 class="ticket-price"><span>$</span>99</h2>
-                        <a href="#" class="btn confer-btn w-100 mb-30">Get Tickets <i
-								class="zmdi zmdi-long-arrow-right"></i></a>
-
-                        <div class="ticket-pricing-table-details">
-                            <p><i class="zmdi zmdi-check"></i> One Day Conference Ticket</p>
-                            <p><i class="zmdi zmdi-check"></i> Coffee-break</p>
-                            <p><i class="zmdi zmdi-check"></i> Lunch and Networking</p>
-                            <p><i class="zmdi zmdi-check"></i> Keynote talk</p>
-                            <p><i class="zmdi zmdi-check"></i> Talk to the Editors Session</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-ticket-pricing-table text-center mb-100 wow fadeInUp" data-wow-delay="300ms">
-                        <h6 class="ticket-plan">Group pass</h6>
-
-                        <div class="ticket-icon">
-                            <img src="img/core-img/p3.png" alt="">
-                        </div>
-                        <h2 class="ticket-price"><span>$</span>199</h2>
-                        <a href="#" class="btn confer-btn w-100 mb-30">Get Tickets <i
-								class="zmdi zmdi-long-arrow-right"></i></a>
-
-                      
-						<div class="ticket-pricing-table-details">
-							<p><i class="zmdi zmdi-check"></i> One Day Conference Ticket</p>
-							<p><i class="zmdi zmdi-check"></i> Coffee-break</p>
-							<p><i class="zmdi zmdi-check"></i> Lunch and Networking</p>
-							<p><i class="zmdi zmdi-check"></i> Keynote talk</p>
-							<p><i class="zmdi zmdi-check"></i> Talk to the Editors Session</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    
 
 
-	section class="our-ticket-pricing-table-area bg-img bg-gradient-overlay section-padding-100-0 jarallax"
+	<section class="our-ticket-pricing-table-area bg-img bg-gradient-overlay section-padding-100-0 jarallax"
 		style="background-image: url(img/bg-img/14.jpg);">
 		<div class="container">
 			<div class="row">
 
 				<div class="col-12">
 					<div class="section-heading text-center wow fadeInUp" data-wow-delay="300ms">
-						<p>Choose a Ticket</p>
-						<h4>Ticket Pricing</h4>
+						
+						<h4>Events</h4>
 					</div>
 				</div>
 			</div>
@@ -716,7 +636,7 @@
 		</div>
 	</section>
 
-	<section class="our-blog-area bg-img bg-gradient-overlay section-padding-100-60"
+	<!-- <section class="our-blog-area bg-img bg-gradient-overlay section-padding-100-60"
 		style="background-image: url(img/bg-img/17.jpg);">
 		<div class="container">
 			<div class="row">
@@ -795,126 +715,94 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
-    <section class="faq-section">
+    <section class="faq-section" style="text-align: center;">
         <div class="container">
-          <div class="row" style= "text-align:center;display: flex;
-          align-items: center;
-          justify-content: center;">
-                            <!-- ***** FAQ Start ***** -->
-                            <div class="col-md-6 offset-md-3">
-        
-                                <div class="faq-title text-center pb-3">
-                                    <h2>FAQ</h2>
+            <div class="row" style="text-align: center;">
+                <div class="col-md-6 offset-md-3" style="text-align: center;">
+                    <div class="col-12">
+                        <h2>FAQs</h2>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="faq" id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="faqHeading-1">
+                                <div class="mb-0">
+                                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-1" data-aria-expanded="true" data-aria-controls="faqCollapse-1">
+                                    <span class="badge">1</span>What is Lorem Ipsum?
+                                    </h5>
                                 </div>
                             </div>
-                            <div class="col-md-10">
-                                <div class="faq" id="accordion">
-                                    <div class="card">
-                                        <div class="card-header" id="faqHeading-1">
-                                            <div class="mb-0">
-                                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-1" data-aria-expanded="true" data-aria-controls="faqCollapse-1">
-                                                    <span class="badge">1</span>What is Lorem Ipsum?
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <div id="faqCollapse-1" class="collapse" aria-labelledby="faqHeading-1" data-parent="#accordion">
-                                            <div class="card-body">
-                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header" id="faqHeading-2">
-                                            <div class="mb-0">
-                                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-2" data-aria-expanded="false" data-aria-controls="faqCollapse-2">
-                                                    <span class="badge">2</span> Where does it come from?
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <div id="faqCollapse-2" class="collapse" aria-labelledby="faqHeading-2" data-parent="#accordion">
-                                            <div class="card-body">
-                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header" id="faqHeading-3">
-                                            <div class="mb-0">
-                                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-3" data-aria-expanded="false" data-aria-controls="faqCollapse-3">
-                                                    <span class="badge">3</span>Why do we use it?
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <div id="faqCollapse-3" class="collapse" aria-labelledby="faqHeading-3" data-parent="#accordion">
-                                            <div class="card-body">
-                                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header" id="faqHeading-4">
-                                            <div class="mb-0">
-                                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-4" data-aria-expanded="false" data-aria-controls="faqCollapse-4">
-                                                    <span class="badge">4</span> Where can I get some?
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <div id="faqCollapse-4" class="collapse" aria-labelledby="faqHeading-4" data-parent="#accordion">
-                                            <div class="card-body">
-                                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header" id="faqHeading-5">
-                                            <div class="mb-0">
-                                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-5" data-aria-expanded="false" data-aria-controls="faqCollapse-5">
-                                                    <span class="badge">5</span> What is Lorem Ipsum?
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <div id="faqCollapse-5" class="collapse" aria-labelledby="faqHeading-5" data-parent="#accordion">
-                                            <div class="card-body">
-                                                <p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header" id="faqHeading-6">
-                                            <div class="mb-0">
-                                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-6" data-aria-expanded="false" data-aria-controls="faqCollapse-6">
-                                                    <span class="badge">6</span> Where does it come from?
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <div id="faqCollapse-6" class="collapse" aria-labelledby="faqHeading-6" data-parent="#accordion">
-                                            <div class="card-body">
-                                                <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header" id="faqHeading-7">
-                                            <div class="mb-0">
-                                                <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-7" data-aria-expanded="false" data-aria-controls="faqCollapse-7">
-                                                    <span class="badge">7</span> Why do we use it?
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <div id="faqCollapse-7" class="collapse" aria-labelledby="faqHeading-7" data-parent="#accordion">
-                                            <div class="card-body">
-                                                <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div id="faqCollapse-1" class="collapse" aria-labelledby="faqHeading-1" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
                                 </div>
                             </div>
-                          </div>
                         </div>
-                        </section>
-	<section class="contact-our-area section-padding-100-0">
+                        <div class="card">
+                            <div class="card-header" id="faqHeading-1">
+                                <div class="mb-0">
+                                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-1" data-aria-expanded="true" data-aria-controls="faqCollapse-1">
+                                    <span class="badge">1</span>What is Lorem Ipsum?
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="faqCollapse-1" class="collapse" aria-labelledby="faqHeading-1" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faqHeading-1">
+                                <div class="mb-0">
+                                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-1" data-aria-expanded="true" data-aria-controls="faqCollapse-1">
+                                    <span class="badge">1</span>What is Lorem Ipsum?
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="faqCollapse-1" class="collapse" aria-labelledby="faqHeading-1" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faqHeading-1">
+                                <div class="mb-0">
+                                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-1" data-aria-expanded="true" data-aria-controls="faqCollapse-1">
+                                    <span class="badge">1</span>What is Lorem Ipsum?
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="faqCollapse-1" class="collapse" aria-labelledby="faqHeading-1" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faqHeading-1">
+                                <div class="mb-0">
+                                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-1" data-aria-expanded="true" data-aria-controls="faqCollapse-1">
+                                    <span class="badge">1</span>What is Lorem Ipsum?
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="faqCollapse-1" class="collapse" aria-labelledby="faqHeading-1" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                                </div>
+                            </div>
+                        </div>              
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	<!-- <section class="contact-our-area section-padding-100-0">
 		<div class="container">
 			<div class="row">
 
@@ -984,7 +872,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<footer id="contact" class="footer-area bg-img bg-overlay-2 section-padding-100-0">
 
@@ -1018,12 +906,12 @@
 							<h5 class="widget-title">Contact</h5>
 
 							<div class="footer-contact-info">
-								<p><i class="zmdi zmdi-map"></i> Thapar Institute of Engineering<br> and Technology,
-									Patiala </p>
-								<p><i class="zmdi zmdi-phone"></i> Animesh Bisen: <a style="color: #9293bc;" href="tel:9140470096">+91 914047009</a></p>
-								<p><i class="zmdi zmdi-phone"></i> Anmol Jindal: <a style="color: #9293bc;" href="tel:8264245458">+91 8264245458</a></p>
+								<p><i class="zmdi zmdi-map"></i><a style="color: #9293bc;" href="https://g.page/ThaparInstitute?share" target="_blank"> Thapar Institute of Engineering<br> and Technology,
+									Patiala</a> </p>
+								<p><i class="zmdi zmdi-phone"></i> Nishant Gupta: <a style="color: #9293bc;" href="tel:8859014946">+91 88590 14946</a></p>
+								<p><i class="zmdi zmdi-phone"></i> Prachi Singhroha: <a style="color: #9293bc;" href="tel:7988188907">+91 79881 88907</a></p>
 								<p><i class="zmdi zmdi-email"></i><a href="mailto:tuedcell@gmail.com"
-										style="color: #9293bc">tuedcell@gmail.com</a></p>
+										style="color: #9293bc">esummit@edctiet.com</a></p>
 								<p><i class="zmdi zmdi-globe"></i><a href="https://www.edctiet.com"
 										style="color: #9293bc;">www.edctiet.com/</a>
 								</p>
@@ -1087,7 +975,7 @@
     <script>
         function countdown() {
             var now = new Date();
-            var over_time = new Date("April 03, 2021 12:00:01");
+            var over_time = new Date("April 25, 2021 12:00:01");
 
             var now_time = now.getTime();
             var over = over_time.getTime();
